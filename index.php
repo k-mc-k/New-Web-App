@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" media="screen" href="styles.css" type="text/css" /> 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Calorie Counter</title>
+    <title>Tenai Calorie Counter</title>
 </head>
 
 <body>
