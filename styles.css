@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+/* *** CSS Document for Web 103 Final Project 
+       Calorie Counter App *** */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, #side, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, #side, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+/* end of Eric's Reset styles */
+
+
+/* ****************************************
+******** MOBILE STYLES ********************
+***************************************** */
+
+body {
+    background-color: white;
+}
+
+header h1 {
+    background-image: url("images/banner3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3em;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#logo img {
+    border: none;
+    max-width: 40%;
+    padding:0.5em;
+    display: block;
+    margin: auto;
+}
+
+/* ****** MAIN MENU ******** */
+
+#main-menu ul li {
+    margin: 0.3em 0.5em;
+    list-style: none;
+    text-align: center;
+}
+
+#main-menu ul li a {
+    display: block;
+    padding:0.5em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+#main-menu ul li a:hover{
+    background-color: #d9752f;
+    color: black;
+}
+
+#main-menu ul li a:active{
+    background-color: #d9752f;
+    color: black;
+}
+    
+/* ** Library - Bounce In ** */
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+    
+
+/* ***** MAIN BODY OF PAGES STARTS HERE ******** */
+
+#homepage p {
+    text-align: center;
+}
+
+main p {
+    padding: 0.5em;
+    line-height: 1.4em;
+}
+
+main h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 1em 0.5em;
+}
+
+form {
+    padding: 1em;
+    margin: 1em;
+}
+
+input[type=text] {
+    width: 90%;
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+    align-items: center;
+}
+
+#contactButton {
+    font-weight: bold;
+    padding: 1.5em;
+    border-radius: 4px;
+    margin: 1em;
+}
+
+#contactButton:hover {
+    background-color: gray;
+}
+
+/* **** IMAGES ******* */
+
+img {
+    max-width: 96%;
+    height: auto;
+    border: solid 2px black;
+    margin: 0.5em;
+}
+
+/* ******* FOOTER ******** */ 
+
+footer {
+    color: black;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    margin-top: 4em;
+}
+
+/* *******************************************************************
+*********** 				MEDIA QUERIES		 		**************
+******************************************************************** */ 
+
+/* ***** TABLET ****** */
+@media only screen and (min-width: 35em){
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; 
+} /* end of wrapper */
+
+p {
+    font-size: 1.1em;
+}
+
+header h1 {
+    padding: 4em;
+    margin-top: 7.5em;
+    text-indent:150%;
+} 
+
+#logo img {
+    position: absolute;
+    top: -273px;
+    height: 120px;
+    padding-left: 2.5em;
+    padding-bottom: 1em;
+    z-index:10;
+}
+
+/* ****** MAIN MENU ******** */
+
+#main-menu ul {
+    position: absolute;
+    top: -118px;
+    padding-top: 65px;
+    display: flex;
+    padding-left: 35%;
+}
+
+#main-menu ul li a {
+    background-color: transparent;
+    color: black;
+    font-size: 1.1em;
+}
+       
+#main-menu ul li a:hover{
+    background-color: transparent;
+    color: #d9752f;
+}
+
+#main-menu ul li a:active{
+    background-color: transparent;
+    color: #d9752f;
+}
+
+/* **** IMAGES ***** */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* **** FOOTER ***** */
+
+footer {
+    text-align: right;
+    padding-right: 1.5em;
+}   
+
+} /* end of media query */  
+
+
+/* **** DESKTOP ****** */    
+@media only screen and (min-width: 55em){
+
+#wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 85em;  
+} /* end of wrapper */
+
+body {
+    background-size:cover;
+}
+
+#logo img {
+    padding-left: 15%;
+}
+
+#main-menu ul {
+    padding-left: 55%
+}
+
+
+} /* end of media query */ 

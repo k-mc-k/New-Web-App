@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">	
+    <title>Calorie Counter App</title>
+
+</head>
+
+<body>
+
+<header>
+    <a href="index.php"><img src="images/homeicon.png" /></a>
+    <h1>Calorie Counter</h1>
+</header>
+
+<div id=mainApp>
+<div class="meal">
+<h2>Breakfast</h2>
+    
+    <form> 
+    Protien: <input id="protien" type="number" name="protien"> grams<br >
+    Carbohydrates: <input id="carbs" type="number" name="carbs"> grams<br >
+    Fat: <input id="fat" type="number" name="fat"> grams<br >
+    </form>
+    <button onClick="generateCals()">Convert to Calories</button><br >
+    <div id=total>TOTAL:
+    </div>
+</div>
+
+<div class="meal">
+<h2>Lunch</h2>
+
+    <form> 
+    Protien: <input id="protien2" type="number" name="protien"> grams<br >
+    Carbohydrates: <input id="carbs2" type="number" name="carbs"> grams<br >
+    Fat: <input id="fat2" type="number" name="fat"> grams<br >
+    </form>
+    <button onClick="generateCals2()">Convert to Calories</button><br >
+    <div id=total2>TOTAL:
+    </div>
+</div>
+
+<div class="meal">
+<h2>Dinner</h2>
+
+    <form> 
+    Protien: <input id="protien3" type="number" name="protien"> grams<br >
+    Carbohydrates: <input id="carbs3" type="number" name="carbs"> grams<br >
+    Fat: <input id="fat3" type="number" name="fat"> grams<br >
+    </form>
+    <button onClick="generateCals3()">Convert to Calories</button><br >
+    <div id=total3>TOTAL:
+    </div>
+</div>
+
+<div class="meal">
+<h2>Snacks</h2>
+
+    <form> 
+    Protien: <input id="protien4" type="number" name="protien"> grams<br >
+    Carbohydrates: <input id="carbs4" type="number" name="carbs"> grams<br >
+    Fat: <input id="fat4" type="number" name="fat"> grams<br >
+    </form>
+    <button onClick="generateCals4()">Convert to Calories</button><br >
+    <div id=total4>TOTAL:
+    </div>
+</div>
+
+    <input id="value1" name="name" type="text" placeHolder="Your Name">
+    <input id="value2" name="age" type="text" placeHolder = "Your Age">
+    <button id="lastbutton" onclick="grabInfo();">FIND YOUR CALORIE INTAKE</button>
+
+    <h3>DAILY TOTAL</h3>
+    <div id=masterTotal></div>
+
+</div>
+<style>
+
+header h1 {
+    background-image: url("images/logo.jpg");
+    background-color: white;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    padding-bottom: 3em;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin:12px;
+}
+
+header a img {
+    display: block;
+    max-width: 1.5em;
+    position:absolute;
+    padding: 0.5em 1.3em;
+}
+
+#mainApp {
+text-align: center;
+font-family:"Palatino Linotype", "Book Antiqua", 'Palatino', serif;
+}  
+
+.meal {
+    padding: 10px;
+    margin:12px;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0.8;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    margin: 0;
+    margin: 0 auto;
+    background-image: url("images/app2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+input {
+    width: 15%;
+    margin: 0.2em;
+    text-align: center;
+}
+
+button {
+    padding: 0.5em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+button:active {
+    background-color: gray;
+}
+
+#value1, #value2 {
+    padding:0.5em;
+    width:20%;
+}
+
+#lastbutton {
+    padding:0.7em;
+    font-size: 12px;
+}
+
+#masterTotal {
+    color: black;
+    font-size: 18px;
+    margin:12px;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+/* **** DESKTOP ****** */    
+@media only screen and (min-width: 55em){
+
+body {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 65em;
+}
+
+.meal {
+    width: auto 80%;
+    max-width: 65em;
+}
+
+} /* End of media query */
+
+
+</style> 
+
+<script src="final-app.js"></script> 
+
+</body>
+</html>
